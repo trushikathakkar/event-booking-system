@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eef2ff;
+            padding: 20px;
+        }
+        .container{
+            width: 350px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button{
+            widows: 100%;
+            padding: 10px;
+            background: #2196f3;
+            color: white;
+            border: none;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        {% if messages %}
+        {% for msg in messages %}
+        <p style="color:red">{{msg}}</p>
+        {% endfor %}
+        {% endif %}
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" name="username" placeholder="Enter Username" required>
+            <input type="password" name="password" placeholder="Enter password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Dont't have an account? <a href="/signup/">Signup</a></p>
+    </div>
+
+</body>
+</html>

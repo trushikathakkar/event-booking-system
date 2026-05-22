@@ -1,0 +1,82 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.navbar{
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a{
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar a:hover{
+    color: #ff9800;
+}
+.container{
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+input,select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button{
+    padding: 12px;
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hower{
+    background-color: #45a049;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+table,th,td{
+    border: 1px solid #ccc;
+}
+th{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+td{
+    padding: 10px;
+}
+.banner{
+    background: #2196f3;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 10px;
+}
+.card{
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
